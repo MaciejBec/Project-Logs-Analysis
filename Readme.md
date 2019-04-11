@@ -49,7 +49,4 @@ July 29, 2016 — 2.5% errors
 - psql -d news -f newsdata.sql
 - \ctest 
 
-NEW DATABASE HAVE:
-- The most popular three articles of all time
-- THe most popular article authors of all time 
-- Days did more than 1% of requests lead to errors
+## Output
