@@ -53,4 +53,9 @@ July 29, 2016 — 2.5% errors
 - psql -d news -f newsdata.sql
 - \ctest 
 
+## Run
+
+- python3 project_logs_analysis.py or
+- ./project_logs_analysis.py
+
 ## Output
