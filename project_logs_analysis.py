@@ -41,8 +41,8 @@ def on_which_days_did_more_than_1_percent_of_requests_lead_to_errors():
                WHERE status <> '200 OK' GROUP BY date) AS errors JOIN
                (SELECT date(time), count(*) AS requests FROM log GROUP BY date)
                AS total ON total.date = errors.date
-               WHERE (ROUND(((errors.error_requests*1.0) / total.requests), 3) > 0.01)
-               ORDER BY percent DESC;"""
+               WHERE (ROUND(((errors.error_requests*3.0) / total.requests),
+               3) > 0.01  ORDER BY percent DESC;"""
 
     results = db_get_results(query)
     for author, views in results:
